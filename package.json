@@ -2,10 +2,14 @@
   "name": "time_to_answer",
   "private": true,
   "dependencies": {
-    "bootstrap": "3.3.7",
-    "font-awesome": "4.6.3",
+    "bootstrap": "^4.3.1",
+    "fastclick": "^1.0.6",
+    "font-awesome": "^4.7.0",
     "jquery": "3.3.1",
-    "metismenu": "3.0.3"
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "metismenu": "^3.0.4",
+    "metismenujs": "^1.1.0",
+    "nprogress": "^0.2.0"
   },
   "version": "1.0.0",
   "main": "index.js",

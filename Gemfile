@@ -40,7 +40,7 @@ gem 'devise'
 gem 'rails-i18n'
 gem 'tty-spinner'
 gem 'jquery-rails'
-#gem 'bootstrap_sb_admin_base_v2'
+gem 'bootstrap_sb_admin_base_v1'
 gem 'font-awesome-rails'
 
 group :development, :test do
