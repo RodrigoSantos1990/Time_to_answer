@@ -19,3 +19,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 																										 img.jpg)
 
 
+Rails.application.config.assets.precompile += %w( jquery-2.2.3/dist/jquery.js)
