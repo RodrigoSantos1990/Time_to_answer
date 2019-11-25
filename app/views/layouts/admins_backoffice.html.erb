@@ -126,9 +126,7 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
+            <span aria-hidden="true">×</span>scrip
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
@@ -141,6 +139,16 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'admins_backoffice' %>
 
+    <% if notice %>
+      <%= javascript_tag do%>
+      $.bootstrapGrowl('<%= notice %>', {
+      type: 'sucess', // (null, 'info', 'danger', 'success'
+      align: 'right', // ('left', 'right', or 'center'
+      allow_dismiss: true, // If true then will display a cross to close the popup.
+      stackup_spacing: 10 // spacing between consecutively stacked growls.
+          });
+      <%end%>
+    <% end %>
 
 </body>
 
