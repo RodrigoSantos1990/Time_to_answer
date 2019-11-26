@@ -18,8 +18,8 @@ before_action :set_admin, only: [:edit, :update,:destroy]
       render :new
     end
   end
-  
-  
+
+
 
   def edit
   end
@@ -34,7 +34,7 @@ before_action :set_admin, only: [:edit, :update,:destroy]
   end
 
 def destroy
-  if @admin.destroy(params_admin)
+  if @admin.destroy
     redirect_to admins_backoffice_admins_path, notice: "Administrador excluido "
   else
     render :index
