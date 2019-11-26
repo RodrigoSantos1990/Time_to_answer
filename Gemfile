@@ -42,6 +42,8 @@ gem 'tty-spinner'
 gem 'jquery-rails'
 gem 'bootstrap_sb_admin_base_v1'
 gem 'font-awesome-rails'
+gem 'kaminari'
+gem 'kaminari-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
