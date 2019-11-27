@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users
   namespace :site do
     get 'welcome/index'
   end
@@ -11,8 +10,13 @@ Rails.application.routes.draw do
   namespace :admins_backoffice do
     get 'welcome/index'
     resources :admins
+    resources :subjects
   end
+
   devise_for :admins
+  devise_for :users
+
+  get 'inicio', to: 'site/welcome#index'
 
   root to: 'site/welcome#index'
 end
