@@ -44,6 +44,7 @@ gem 'bootstrap_sb_admin_base_v1'
 gem 'font-awesome-rails'
 gem 'kaminari'
 gem 'kaminari-i18n'
+gem 'cocoon'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,6 +53,7 @@ group :development, :test do
   gem'capybara'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rails_db', '2.0.4'
 end
 
 group :development do
